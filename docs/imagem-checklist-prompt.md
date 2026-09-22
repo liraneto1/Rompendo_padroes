@@ -1,0 +1,7 @@
+# Checklist da primeira página
+
+Editado com ImageGen integrado a partir da imagem de processo. Aplicado em `dist/teste/assets/checklist-padroes.webp`; original em `dist/teste/assets/checklist-padroes.png`.
+
+## Prompt utilizado
+
+Edit this image into a clear CHECKLIST illustration for the ROMPA questionnaire landing page. Preserve its premium 3D matte graphite and warm brushed gold aesthetic, deep green-black background, soft cinematic light, portrait aspect ratio. Replace the diagonal connected process nodes entirely with ONE large elegant upright charcoal checklist panel, slightly angled in three-quarter perspective, centered. The panel has five neatly aligned horizontal rows: each has a large square checkbox on the left and two restrained horizontal gold/ivory strokes on the right suggesting answers, not actual text. First three checkboxes visibly checked with crisp golden ticks; last two outlined and empty. Subtle warm gold rim highlights, tactile matte surfaces, generous spacing and strong clarity at small display sizes. Small simple clip at top suggests a questionnaire clipboard. Remove arrows, branching lines, circles and process symbols. Keep all main content within central 70%, generous dark margins, bottom 20% quiet for the site's HTML caption. No people, faces, brains, letters, words, numbers, percentages, scores, logos or extra decorative objects. The unmistakable subject is a checklist being completed, polished editorial 3D raster art.

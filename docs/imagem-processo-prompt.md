@@ -1,0 +1,9 @@
+# Imagem de processo da primeira página
+
+Gerada com a ferramenta integrada ImageGen. Substitui a ilustração de perfil humano conforme a preferência por gráficos e processos.
+
+Aplicada em `dist/teste/assets/processo-padroes.webp`. Original em `dist/teste/assets/processo-padroes.png`.
+
+## Prompt utilizado
+
+Use case: stylized-concept. Asset type: portrait hero artwork for the ROMPA reflection questionnaire website. Create a sophisticated editorial 3D visualization of a PROCESS and qualitative PATTERN MAP, not a human profile. A clearly readable flowing diagram made of five dark graphite rounded rectangular nodes arranged in a graceful ascending S curve, connected by fine glowing warm gold lines with small directional arrowheads. Each node contains minimal graphical elements: first three small input dots; second a recurring circular path; third several parallel paths joining; fourth an illuminated pause gap in a ring; fifth one clear forward arrow. Secondary thin branching lines organize into the main flow, suggesting answers being organized into an understandable cycle. Main visual must unmistakably look like a process chart, coherent and elegant, not random floating decorations. Polished 3D matte black and brushed amber gold objects, fine beveled edges, realistic soft studio shadows, premium restrained design. Deep charcoal green-black background #101311, gold #edb75e, warm ivory accents. Portrait 4:5 composition, full process contained in central 70% with generous margins, upper corners empty for rounded website cropping, bottom 20% dark and calm for HTML caption. No people, no face silhouettes, no human heads, no brains, no leaves, no rocks, no spheres, no roads. No words, letters, numbers, percentages, scores, axes, diagnosis symbols or logos. This is a qualitative process illustration, no fabricated measurements. Deliver a finished high-quality raster image, not a webpage screenshot.
