@@ -1,5 +1,5 @@
 const localHosts=new Set(['localhost','127.0.0.1']);
-const publicHosts=new Set(['arquiteturadavida.com.br','www.arquiteturadavida.com.br']);
+const publicHosts=new Set(['arquiteturadavida.com.br','www.arquiteturadavida.com.br','padroes.arquiteturadavida.com.br']);
 
 export function runtimeConfig(env=process.env){
   const production=env.NODE_ENV==='production';

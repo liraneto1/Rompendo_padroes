@@ -29,7 +29,7 @@ ROMPA_DB_PATH=<caminho absoluto real do volume persistente>/rompa.sqlite
 
 Não copie o marcador `<...>` literalmente. A hospedagem fornece `PORT`; preserve seu valor. Sem `PORT`, o fallback é 4173. O projeto não carrega `.env` automaticamente; `.env.example` é apenas referência. Não configure segredos no frontend.
 
-Conecte `arquiteturadavida.com.br` e `www.arquiteturadavida.com.br`, configure DNS e HTTPS e encaminhe todo o tráfego ao processo Node. O proxy deve preservar o `Host` público (com porta opcional). Não usamos `X-Forwarded-Host` ou `X-Forwarded-Proto` para autorizar solicitações. Origens HTTPS precisam corresponder ao Host; a proteção de origem e a ausência de CORS aberto foram mantidas. Domínios temporários da Hostinger não fazem parte da lista permitida.
+O endereço de produção escolhido é `padroes.arquiteturadavida.com.br`. Conecte esse subdomínio, configure DNS e HTTPS e encaminhe todo o tráfego ao processo Node. O proxy deve preservar o `Host` público (com porta opcional). Não usamos `X-Forwarded-Host` ou `X-Forwarded-Proto` para autorizar solicitações. Origens HTTPS precisam corresponder ao Host; a proteção de origem e a ausência de CORS aberto foram mantidas. Domínios temporários da Hostinger não fazem parte da lista permitida.
 
 O cookie administrativo recebe `Secure` em produção; acesse `/admin/` por HTTPS. HTTP continua funcionando localmente quando `NODE_ENV` não é `production`. `npm start` sem variáveis mantém porta 4173, bind 127.0.0.1 e o banco `.data/rompa.sqlite`. `Iniciar-ROMPA.ps1` continua sendo o inicializador local.
 

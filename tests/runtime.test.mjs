@@ -13,7 +13,7 @@ test('runtime preserves local defaults and supports the production port and exte
   for(const PORT of ['0','65536','-1','abc','3000oops'])assert.throws(()=>runtimeConfig({PORT}));
 });
 test('Host and Origin reject spoofed authorities and preserve same-origin HTTPS protection',()=>{
-  for(const host of ['localhost:4173','127.0.0.1:4173','arquiteturadavida.com.br','www.arquiteturadavida.com.br:443'])assert.ok(allowedHost(host));
+  for(const host of ['localhost:4173','127.0.0.1:4173','arquiteturadavida.com.br','www.arquiteturadavida.com.br:443','padroes.arquiteturadavida.com.br'])assert.ok(allowedHost(host));
   for(const host of ['attacker.test','arquiteturadavida.com.br.attacker.test','localhost@attacker.test','localhost/path','localhost:99999','localhost,attacker.test',undefined])assert.equal(allowedHost(host),null);
   assert.ok(allowedOrigin('http://localhost:4173','localhost:4173',false));
   assert.ok(allowedOrigin('https://www.arquiteturadavida.com.br','www.arquiteturadavida.com.br:443',true));
@@ -29,10 +29,10 @@ test('production API supports HTTPS setup, session, logout and Secure cookies be
     });req.on('error',reject);req.end(method==='POST'?JSON.stringify({email:'production@example.test',password:'Production-test-only-123'}):undefined);
   });
   try{
-    for(const host of ['arquiteturadavida.com.br','www.arquiteturadavida.com.br'])assert.equal((await call(host,'/api/admin/session')).status,200);
+    for(const host of ['arquiteturadavida.com.br','www.arquiteturadavida.com.br','padroes.arquiteturadavida.com.br'])assert.equal((await call(host,'/api/admin/session')).status,200);
     assert.equal((await call('evil.test','/api/admin/session')).status,403);
     assert.equal((await call('arquiteturadavida.com.br','/api/admin/setup','POST','http://arquiteturadavida.com.br')).status,403);
-    const setup=await call('arquiteturadavida.com.br','/api/admin/setup','POST','https://arquiteturadavida.com.br');
+    const setup=await call('padroes.arquiteturadavida.com.br','/api/admin/setup','POST','https://padroes.arquiteturadavida.com.br');
     assert.equal(setup.status,200);assert.match(setup.headers['set-cookie'][0],/; Secure/);
     const cookie=setup.headers['set-cookie'][0].split(';')[0];
     assert.equal((await call('arquiteturadavida.com.br','/api/admin/session','GET',undefined,cookie)).body.authenticated,true);
