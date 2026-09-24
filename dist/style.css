@@ -71,3 +71,18 @@
 #como-funciona:before{height:min(25vw,384px);background-image:linear-gradient(0deg,#0b0d0c,transparent 55%),linear-gradient(90deg,#0b0d0c 0%,#0b0d0c 54%,transparent 70%),url('/assets/sections/S08.png')}
 @media(max-width:1000px){#como-funciona:before{height:260px}}
 @media(max-width:600px){#como-funciona:before{height:250px}}
+/* S09: author composition from the supplied artwork, with readable HTML copy. */
+#autor{position:relative;background:#0c0d0c url('/assets/sections/sobre-autor.png') center/100% 100% no-repeat;padding:0;border:0;min-height:0}
+#autor>.wrap{width:100%;max-width:1536px;margin:auto;display:grid;grid-template-columns:44% 56%;gap:0;align-items:start;min-height:66.6667vw;padding:6.4% 0 16%}
+#autor .monogram{font-size:0;background:none;border:0;box-shadow:none;padding:0;margin:0;min-height:0;height:100%;color:transparent}
+#autor .monogram small{display:none}
+#autor .author-copy{background:#0d0e0d;position:relative;margin:0 23% 0 9%;padding:35px 0 10px;min-height:42vw}
+#autor h2{font-size:clamp(36px,4.15vw,64px);font-weight:750;line-height:1.15;letter-spacing:-1.5px;margin:0 0 10px;color:#f5f0e9}
+#autor .eyebrow{color:#eeb15a;font-size:clamp(10px,1.05vw,16px);letter-spacing:6px;margin:0 0 30px}
+#autor .eyebrow:after{content:'';display:block;width:42px;height:1px;background:#e3a743;margin-top:34px}
+#autor .lead,#autor .author-copy>p:not(.eyebrow):not(.micro){font-size:clamp(17px,1.55vw,24px);line-height:1.45;font-weight:300;color:#f0ede8;margin:0;max-width:none}
+#autor h3{font-size:clamp(23px,2.15vw,33px);line-height:1.2;margin:42px 0 14px;font-weight:700;letter-spacing:-.5px}
+#autor .micro{font-size:clamp(9px,.8vw,12px);letter-spacing:3px;line-height:1.8;margin:32px 0 0;color:#e4dfd8}
+#autor .micro:before{content:'';display:block;width:54px;height:1px;background:#e3a743;margin-bottom:23px}
+@media(min-width:1536px){#autor>.wrap{min-height:1024px;padding-top:98px;padding-bottom:246px}#autor .author-copy{min-height:645px}}
+@media(max-width:760px){#autor{background-size:auto 580px;background-position:left top;background-repeat:no-repeat}#autor>.wrap{width:100%;display:flex;flex-direction:column;min-height:0;padding:0 0 55px;gap:0}#autor .monogram{width:100%;height:340px;flex:none;background:#0d0e0d url('/assets/sections/sobre-autor.png') 4% 10%/240% auto no-repeat}#autor .author-copy{margin:0;padding:35px 7% 0;width:100%;min-height:0;box-sizing:border-box;background:linear-gradient(#0d0e0d,#0c0d0c)}#autor h2{font-size:40px}#autor .eyebrow{font-size:11px;letter-spacing:4px}#autor .lead,#autor .author-copy>p:not(.eyebrow):not(.micro){font-size:20px}#autor h3{font-size:27px;margin-top:32px}#autor .micro{font-size:10px;letter-spacing:2px}}
