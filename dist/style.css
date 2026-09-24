@@ -43,3 +43,31 @@
 #metodo .method-signature:after{transform:rotate(180deg)}
 #metodo .method-signature em{font-style:normal;font-weight:700;color:#f1b25a}
 @media(max-width:760px){#metodo{padding:75px 0}#metodo .center .eyebrow{font-size:10px;letter-spacing:3px}#metodo h2{font-size:44px;letter-spacing:-1px}#metodo .method-grid{grid-template-columns:1fr;gap:42px;margin-top:40px}#metodo .method-grid article{width:100%;max-width:350px;margin:auto;padding-top:20px}#metodo .method-grid article:after{width:210px;left:calc(50% - 105px)}#metodo .method-grid article:before{display:none}#metodo .method-grid b{font-size:145px;margin:10px 0 24px}#metodo .method-grid h3{font-size:28px}#metodo .method-grid p{font-size:18px}#metodo .method-grid p br{display:initial}#metodo .method-signature{flex-wrap:wrap;gap:8px 12px;margin-top:60px;font-size:25px;letter-spacing:1px}#metodo .method-signature:before,#metodo .method-signature:after{display:none}}
+/* S08: illustrated steps using the supplied artwork as a CSS image atlas. */
+#como-funciona{position:relative;isolation:isolate;overflow:hidden;background:#0b0d0c;padding:140px 0 80px}
+#como-funciona:before{content:'';position:absolute;z-index:-1;inset:0 0 auto;height:470px;background:linear-gradient(0deg,#0b0d0c,transparent 45%),linear-gradient(90deg,#0b0d0c 0%,#0b0d0c 54%,transparent 70%),url('/assets/sections/S08.png') top center/100% auto no-repeat}
+#como-funciona>.wrap{width:90%;max-width:1380px}
+#como-funciona .eyebrow{color:#efb253;letter-spacing:4px;font-size:13px;display:flex;align-items:center;gap:14px}
+#como-funciona .eyebrow:before{content:'';height:1px;width:34px;background:#b88636}
+#como-funciona h2{font-size:clamp(36px,4vw,62px);letter-spacing:-1.8px;font-weight:400;margin:20px 0 10px;line-height:1.15}
+#como-funciona h2 em{font-family:inherit;font-style:normal;font-weight:750;color:#f5f2ed}
+#como-funciona .lead{font-size:clamp(18px,1.5vw,23px);line-height:1.35;max-width:760px;color:#eee9e2}
+#como-funciona .how-grid{margin-top:72px;gap:36px;grid-template-columns:repeat(4,minmax(0,1fr))}
+#como-funciona .how-grid article{border:0;padding:0;min-width:0}
+#como-funciona .how-number{display:flex;align-items:center;gap:23px;font-size:44px;font-weight:300;color:#eeb15b;line-height:1;margin-bottom:20px}
+#como-funciona .how-number:after{content:'';flex:1;height:8px;background:radial-gradient(circle at 4px 50%,#101210 0 2px,#edb357 2px 3px,transparent 4px),linear-gradient(#b48b4e,#b48b4e) right center/calc(100% - 7px) 1px no-repeat}
+#como-funciona .how-image{width:100%;aspect-ratio:292/255;background-image:url('/assets/sections/S08.png');background-size:526% 401.57%;background-position:6.27% 60.21%;background-repeat:no-repeat}
+#como-funciona .how-image-02{background-position:35.53% 60.21%}
+#como-funciona .how-image-03{background-position:64.87% 60.21%}
+#como-funciona .how-image-04{background-position:94.21% 60.21%}
+#como-funciona .how-grid h3{font-size:clamp(17px,1.5vw,23px);line-height:1.25;margin:18px 0 8px;font-weight:600}
+#como-funciona .how-grid p{font-size:clamp(16px,1.35vw,21px);line-height:1.4;color:#ede9e2;margin:0;max-width:270px}
+#como-funciona .rhythm{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 12px;font-size:clamp(22px,2.3vw,35px);line-height:1.35;margin:76px 0 0;border:0;padding:0;color:#f5f2ed}
+#como-funciona .rhythm:before{content:'';width:95px;height:1px;background:#b48b4e;margin-right:20px}
+#como-funciona .how-note{text-align:right;font-size:10px;letter-spacing:4px;line-height:1.8;margin:22px 0 0;color:#eee9e2}
+@media(max-width:1000px){#como-funciona .how-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px}#como-funciona:before{background-size:auto,auto,auto 680px}#como-funciona .lead{max-width:600px}}
+@media(max-width:600px){#como-funciona{padding:75px 0 55px}#como-funciona:before{opacity:.5;background-image:linear-gradient(0deg,#0b0d0c,transparent),linear-gradient(90deg,#0b0d0c 20%,transparent),url('/assets/sections/S08.png');background-position:center,center,75% top}#como-funciona h2{font-size:38px}#como-funciona .lead br{display:none}#como-funciona .how-grid{grid-template-columns:1fr;margin-top:44px;gap:35px}#como-funciona .how-grid h3{font-size:23px}#como-funciona .how-grid p{font-size:18px;max-width:none}#como-funciona .rhythm{display:block;margin-top:50px;font-size:25px;text-align:left}#como-funciona .rhythm:before{display:none}#como-funciona .how-note{text-align:left}}
+/* Keep the header artwork above the lettering embedded in the reference. */
+#como-funciona:before{height:min(25vw,384px);background-image:linear-gradient(0deg,#0b0d0c,transparent 55%),linear-gradient(90deg,#0b0d0c 0%,#0b0d0c 54%,transparent 70%),url('/assets/sections/S08.png')}
+@media(max-width:1000px){#como-funciona:before{height:260px}}
+@media(max-width:600px){#como-funciona:before{height:250px}}
