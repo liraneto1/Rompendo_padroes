@@ -22,3 +22,24 @@
 #ferramentas .product a.pill{position:static}
 #ferramentas .product a.pill::after{content:'';position:absolute;inset:0;z-index:2;cursor:pointer;border-radius:inherit}
 #ferramentas .product a.pill:focus-visible::after{outline:2px solid #efb04e;outline-offset:-4px}
+/* S04: connected gold monograms from the supplied ROMPA reference. */
+#metodo{background:radial-gradient(ellipse at 85% 0%,#6950391c,transparent 48%),radial-gradient(ellipse at 50% 100%,#46352214,transparent 60%),#0d0e0d;padding:125px 0 130px}
+#metodo>.wrap{width:94%;max-width:1480px}
+#metodo .center .eyebrow{color:#efb657;font-size:14px;letter-spacing:5px;margin-bottom:18px}
+#metodo h2{font-size:clamp(44px,6.2vw,96px);font-weight:300;line-height:1.15;letter-spacing:-2px;margin:0;color:#faf4ed}
+#metodo h2 strong{font-weight:750}
+#metodo .method-grid{margin-top:42px;gap:0;text-align:center;grid-template-columns:repeat(5,minmax(0,1fr))}
+#metodo .method-grid article{display:block;border:0;padding:20px 8px 0;position:relative;isolation:isolate}
+#metodo .method-grid article:after{content:'';position:absolute;width:82%;aspect-ratio:1;left:9%;top:0;border:1px solid transparent;border-radius:50%;background:linear-gradient(#0d0e0d,#0d0e0d) padding-box,linear-gradient(135deg,#b9823020,#c38a40a0 45%,#a6792a08 80%) border-box;z-index:-1}
+#metodo .method-grid article:before{content:'';display:block;position:absolute;top:clamp(80px,7.8vw,120px);left:50%;width:100%;height:8px;background:radial-gradient(circle at center,#ffbc55 0 4px,transparent 4.5px),linear-gradient(#bc832d80,#bc832d80) center/100% 1px no-repeat;z-index:-1}
+#metodo .method-grid article:last-child:before{display:none}
+#metodo .step{display:block;font-size:13px;letter-spacing:2px;color:#fff4e5}
+#metodo .method-grid b{display:block;font-family:Georgia,serif;font-size:clamp(100px,11.5vw,177px);line-height:1.05;font-weight:400;margin:12px 0 22px;background:linear-gradient(115deg,#94601f 12%,#ffc36d 40%,#eab463 58%,#996224 86%);background-clip:text;-webkit-background-clip:text;color:transparent}
+#metodo .method-grid h3{font-size:clamp(21px,2.1vw,32px);font-weight:400;letter-spacing:2px;margin:0}
+#metodo .method-grid h3:after{content:'';display:block;width:32px;height:1px;background:#bd872e;margin:23px auto 19px}
+#metodo .method-grid p{font-size:clamp(16px,1.35vw,21px);line-height:1.5;letter-spacing:1.2px;color:#f2eee8;margin:0}
+#metodo .method-signature{display:flex;align-items:center;justify-content:center;gap:18px;font-size:clamp(25px,2.4vw,37px);letter-spacing:2px;margin:115px 0 0}
+#metodo .method-signature:before,#metodo .method-signature:after{content:'';width:135px;height:1px;background:linear-gradient(90deg,transparent,#d49b39)}
+#metodo .method-signature:after{transform:rotate(180deg)}
+#metodo .method-signature em{font-style:normal;font-weight:700;color:#f1b25a}
+@media(max-width:760px){#metodo{padding:75px 0}#metodo .center .eyebrow{font-size:10px;letter-spacing:3px}#metodo h2{font-size:44px;letter-spacing:-1px}#metodo .method-grid{grid-template-columns:1fr;gap:42px;margin-top:40px}#metodo .method-grid article{width:100%;max-width:350px;margin:auto;padding-top:20px}#metodo .method-grid article:after{width:210px;left:calc(50% - 105px)}#metodo .method-grid article:before{display:none}#metodo .method-grid b{font-size:145px;margin:10px 0 24px}#metodo .method-grid h3{font-size:28px}#metodo .method-grid p{font-size:18px}#metodo .method-grid p br{display:initial}#metodo .method-signature{flex-wrap:wrap;gap:8px 12px;margin-top:60px;font-size:25px;letter-spacing:1px}#metodo .method-signature:before,#metodo .method-signature:after{display:none}}
